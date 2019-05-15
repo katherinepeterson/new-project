@@ -1,0 +1,33 @@
+html {
+    color: dodgerblue;
+}
+
+h2 {
+    text-align: center;
+}
+
+.prizeCard {
+    height: 200px;
+    width: 150px;
+    border: solid 1px;
+    text-align: center;
+    
+}
+.customerCard {
+    height: 200px;
+    width: 150px;
+    border: solid 1px;
+    text-align: center;
+    
+}
+
+#prizeList {
+    display: flex;
+    display: flex;
+    justify-content: center;
+}
+#customerList {
+    display: flex;
+    display: flex;
+    justify-content: center;
+}
