@@ -49,7 +49,6 @@ const data = {
   renderCustomerCards();
 
 
-// customerCards = Array.from(document.getElementsByClassName('customerCard'))
     customerCards = document.getElementById('customerList')
 
     customerCards.addEventListener('click', function(ev){
@@ -75,22 +74,6 @@ const data = {
     });
     
 
-// customerCards.forEach(function(el, i){
-//     el.addEventListener('click', function(ev){
-//         if (ev.target.tagName === 'BUTTON') {
-//             if (ev.target.className === 'plus') {
-//                 console.log('click')
-//                 data.customers[customers2[ev.target.parentNode.parentNode.className]][prizes[0]] += 1;
-//                 renderCustomerCards();
-//                 renderPrizeCards();
-//             } else if (ev.target.className === 'minus'){
-//                 console.log('click')
-//                 renderCustomerCards();
-//                 renderPrizeCards();
-//             }
-//         }
-//     });
-    
-// })
+
 
 
