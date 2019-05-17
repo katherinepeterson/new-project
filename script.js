@@ -22,7 +22,9 @@ const data = {
       Bazz: 5
     }
   };
-
+/* 
+Indentation should be one to the left from line 2 on.
+*/
   const prizes = Object.keys(data.prizes);
   function renderPrizeCards() {
     const html = prizes.map(function(el){
@@ -30,7 +32,7 @@ const data = {
     }).join('');
     document.getElementById('prizeList').innerHTML = html;
   }
-
+// Good remembering to render before doing anything!
   renderPrizeCards();
 
   const customers2 = Object.keys(data.customers);
@@ -48,10 +50,16 @@ const data = {
 
   renderCustomerCards();
 
-
+// Don't forget to keep using semicolons!  You've used them most everywhere else!
     customerCards = document.getElementById('customerList')
-
+  /* 
+  Stellar! Good job setting up your single event listener, then filtering further on the button and the plus/minus!
+  */
     customerCards.addEventListener('click', function(ev){
+      /* 
+      Indentation is off here, in the function and right outside.  Just remember to keep it consistent!
+      */
+        // This is a bit comlex, perhaps break these out into variables of their own so it's easier to read?  But your code is short, in number of lines!
         let prizeCount = data.customers[customers2[ev.target.parentNode.parentNode.className]][prizes[ev.target.id]];
         let inventoryLevel = data.prizes[prizes[ev.target.id]]
         if (ev.target.tagName === 'BUTTON') {
